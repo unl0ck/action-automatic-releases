@@ -30,6 +30,10 @@ inputs:
     description: "Don't push an Release Page"
     required: false
     default: false
+  create_release_tag:
+    description: "Will Tag Current Commit"
+    required: false
+    default: true
 outputs:
   automatic_releases_tag:
     description: "The release tag this action just processed"
