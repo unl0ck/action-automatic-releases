@@ -7,7 +7,7 @@ inputs:
     required: true
   automatic_release_tag:
     description: "Git tag (for automatic releases)"
-    required: false
+    default: "latest"
   delete_exist_tag:
     description: "Should exist Tag delete or not"
     required: false
@@ -26,6 +26,10 @@ inputs:
   files:
     description: "Assets to upload to the release"
     required: false
+  no_release_page:
+    description: "Don't push an Release Page"
+    required: false
+    default: false
 outputs:
   automatic_releases_tag:
     description: "The release tag this action just processed"
